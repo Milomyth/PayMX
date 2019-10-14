@@ -14,3 +14,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/dashboard', 'HomeController@index')->name('dashboard');
+
+Route::get('/hom/ruta', function(){
+	return 'ruta';
+})->name('perfiluser.show');
+
+Route::get('/hom/rutas', function(){
+	return 'ruta';
+})->name('clientes.index');

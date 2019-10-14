@@ -19,7 +19,7 @@ class CreateRolesTable extends Migration
             $table->string('slug');
             $table->timestamps();
         });
-        Schema::create('roles_users', function (Blueprint $table) {
+        Schema::create('role_user', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('role_id');
