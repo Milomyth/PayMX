@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="{{asset('assets/vendors/iconfonts/flag-icon-css/css/flag-icon.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/vendors/css/vendor.bundle.base.css')}}">
     <link rel="stylesheet" href="{{asset('assets/vendors/css/vendor.bundle.addons.css')}}">
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
     <!-- endinject -->
     <!-- plugin css for this page -->
     <!-- End plugin css for this page -->
@@ -19,6 +20,7 @@
     <!-- endinject -->
     <!-- Layout styles -->
     <link rel="stylesheet" href="{{asset('assets/css/demo_1/style.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/paymx.css')}}">
     <!-- End Layout styles -->
     <link rel="shortcut icon" href="{{asset('assets/images/favicon.png')}}" />
   </head>
@@ -54,6 +56,7 @@
   <!-- inject:js -->
   <script src="{{ asset('assets/js/shared/off-canvas.js')}}"></script>
   <script src="{{ asset('assets/js/shared/misc.js')}}"></script>
+  <script src="{{asset('assets/js/paymx.js')}}"></script>
   <!-- endinject -->
   <!-- Custom js for this page-->
   <!-- End custom js for this page-->

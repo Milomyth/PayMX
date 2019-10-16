@@ -1,9 +1,9 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
   <ul class="nav">
     <li class="nav-item nav-profile">
-      <a href="{{ route('perfiluser.show', Auth::user()->id) }}" class="nav-link">
+      <a href="{{ route('perfil.edit', Auth::user()->id) }}" class="nav-link">
         <div class="profile-image">
-          <img class="img-xs rounded-circle" src="{{asset('assets/uploads/avatars')}}/{{ Auth::user()->avatar}}" alt="profile image">
+          <img class="img-xs rounded-circle" src="{{asset('/uploads/avatars')}}/{{ Auth::user()->avatar}}" alt="profile image">
           <div class="dot-indicator bg-success"></div>
         </div>
         <div class="text-wrapper">

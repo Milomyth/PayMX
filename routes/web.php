@@ -19,6 +19,10 @@ Auth::routes();
 
 Route::get('/dashboard', 'HomeController@index')->name('dashboard');
 
+Route::resource('perfil', 'ProfilesController');
+Route::put('/perfil/avatar/{perfil}', 'ProfilesController@updateAvatar')->name('perfil.updateAvatar');
+
+//Rutas temporales
 Route::get('/hom/ruta', function(){
 	return 'ruta';
 })->name('perfiluser.show');
