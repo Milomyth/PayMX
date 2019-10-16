@@ -32,7 +32,7 @@
       <div class="collapse" id="ui-basic">
         <ul class="nav flex-column sub-menu">
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('clientes.index')}}">Lista de Clientes</a>
+            <a class="nav-link" href="{{ route('cliente.index')}}">Lista de Clientes</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="pages/ui-features/dropdowns.html">Nuevo Cliente</a>

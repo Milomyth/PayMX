@@ -15,13 +15,13 @@ class CreatePaymentsTable extends Migration
     {
         Schema::create('payments', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('debit_id');
+            $table->unsignedBigInteger('adeudo_id');
             $table->float('payment', 8,2)->nullable();
             $table->timestamps();
 
-            $table->foreign('debit_id')
+            $table->foreign('adeudo_id')
               ->references('id')
-              ->on('debits')
+              ->on('adeudos')
               ->onDelete('cascade');
         });
     }

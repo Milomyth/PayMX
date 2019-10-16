@@ -22,11 +22,11 @@ Route::get('/dashboard', 'HomeController@index')->name('dashboard');
 Route::resource('perfil', 'ProfilesController');
 Route::put('/perfil/avatar/{perfil}', 'ProfilesController@updateAvatar')->name('perfil.updateAvatar');
 
-//Rutas temporales
-Route::get('/hom/ruta', function(){
-	return 'ruta';
-})->name('perfiluser.show');
+Route::resource('cliente', 'ClienteController');
 
-Route::get('/hom/rutas', function(){
+//Route::get('/dashboard/clientes', 'ClienteController@index')->name('clientes.index');
+
+//Rutas temporales
+Route::get('/home/rutas', function(){
 	return 'ruta';
 })->name('clientes.index');

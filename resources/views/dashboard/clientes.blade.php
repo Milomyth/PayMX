@@ -21,10 +21,15 @@
             @foreach ($clientes as $cliente)
               <tr>
                 <td> {{$loop->iteration}} </td>
-                <td> {{ $cliente->full_name}} </td>
+                <td> 
+                  <div class="profile-image">
+                    <img class="img-xs rounded-circle" src="{{asset('/uploads/avatars')}}/{{ $cliente->avatar}}" alt="profile image">
+                   {{ $cliente->full_name}}
+                  </div>  
+                </td>
                 <td> {{ $cliente->email }} </td>
                 <td>
-                  @if ($cliente->debit == null)
+                  @if ($cliente->adeudo == null)
                     $0.00
                   @else
                     ${{ number_format($cliente->debit,2)}}
